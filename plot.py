@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import datetime
 
 def get_df(fname, win_len):
     df = pd.read_csv(fname)
@@ -19,13 +20,15 @@ def get_df(fname, win_len):
     # df = df.divide(df.index.days_in_month, axis='index')
     return df
 
-df = lambda n: get_df('desktop_monthly_colors.csv', n)
-df_mob = lambda n: get_df('mobile_monthly_colors.csv', n)
-df_mobapp = lambda n: get_df('mobileapp_monthly_colors.csv', n)
+df = lambda n: get_df('desktop_countries_monthly.csv', n)
+df_mob = lambda n: get_df('mobile_countries_monthly.csv', n)
+df_mobapp = lambda n: get_df('mobileapp_countries_monthly.csv', n)
 
 # To plot, use something like this
 # np.log10(df(n)+df_mob(n)+df_mobapp(n)).plot(color=colors, legend=None) ; plt.title("log10 plot, moving avg of {} months".format(n)) ; plt.show()
 # n=2 ; np.log10(df(n)).plot(color=colors, legend=None) ; plt.axvspan(datetime.date(2015, 7, 1), datetime.date(2016, 9, 1), color='yellow', alpha=0.4) ; plt.axvspan(datetime.date(2007, 12, 1), datetime.date(2016, 1, 1), color='green', alpha=0.4) ; plt.title("log10 plot, moving avg of {} months, no mobile".format(n)) ; plt.show()
+# top 10 countries plot
+# n=3 ; np.log10(df(n)[df(n).sum().sort_values(ascending=False).index[:11]]).plot() ; plt.title("log10 plot, moving avg of {} months".format(n)) ; plt.show()
 
 colors = ('k', 'b', 'brown', 'g', 'grey', 'orange', 'purple', 'r', 'violet', 'lightgrey', 'y', 'cyan')
 
