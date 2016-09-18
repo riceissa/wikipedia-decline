@@ -22,6 +22,9 @@ df = lambda n: get_df('desktop_monthly_colors.csv', n)
 df_mob = lambda n: get_df('mobile_monthly_colors.csv', n)
 df_mobapp = lambda n: get_df('mobileapp_monthly_colors.csv', n)
 
+# To plot, use something like this
+# np.log10(df(n)+df_mob(n)+df_mobapp(n)).plot(color=colors, legend=None) ; plt.title("log10 plot, moving avg of {} months".format(n)) ; plt.show()
+
 colors = ('k', 'b', 'brown', 'g', 'grey', 'orange', 'purple', 'r', 'violet', 'lightgrey', 'y', 'cyan')
 
 # df = pd.read_csv('desktop_colors.csv')
