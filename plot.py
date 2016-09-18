@@ -18,9 +18,9 @@ def get_df(fname, win_len):
     # df = df.divide(df.index.days_in_month, axis='index')
     return df
 
-df = get_df('desktop_monthly_colors.csv', 3)
-df_mob = get_df('mobile_monthly_colors.csv', 3)
-df_mobapp = get_df('mobileapp_monthly_colors.csv', 3)
+df = lambda n: get_df('desktop_monthly_colors.csv', n)
+df_mob = lambda n: get_df('mobile_monthly_colors.csv', n)
+df_mobapp = lambda n: get_df('mobileapp_monthly_colors.csv', n)
 
 colors = ('k', 'b', 'brown', 'g', 'grey', 'orange', 'purple', 'r', 'violet', 'lightgrey', 'y', 'cyan')
 
