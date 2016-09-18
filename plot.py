@@ -13,6 +13,7 @@ def get_df(fname, win_len):
     df = pd.rolling_sum(df, window=win_len)
     tmp = df.copy()
     for i in range(win_len-1, len(df)):
+        # TODO use the month ends to calculate the period
         num_days = (tmp.iloc[i].name - tmp.iloc[i-win_len+1].name).days
         df.iloc[i] = tmp.iloc[i].divide(num_days)
     # df = df.divide(df.index.days_in_month, axis='index')
@@ -24,6 +25,7 @@ df_mobapp = lambda n: get_df('mobileapp_monthly_colors.csv', n)
 
 # To plot, use something like this
 # np.log10(df(n)+df_mob(n)+df_mobapp(n)).plot(color=colors, legend=None) ; plt.title("log10 plot, moving avg of {} months".format(n)) ; plt.show()
+# n=2 ; np.log10(df(n)).plot(color=colors, legend=None) ; plt.axvspan(datetime.date(2015, 7, 1), datetime.date(2016, 9, 1), color='yellow', alpha=0.4) ; plt.axvspan(datetime.date(2007, 12, 1), datetime.date(2016, 1, 1), color='green', alpha=0.4) ; plt.title("log10 plot, moving avg of {} months, no mobile".format(n)) ; plt.show()
 
 colors = ('k', 'b', 'brown', 'g', 'grey', 'orange', 'purple', 'r', 'violet', 'lightgrey', 'y', 'cyan')
 
