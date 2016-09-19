@@ -70,6 +70,25 @@ def get_stats(data, period_lengths=[1, 3, 6, 12]):
 # plot scatter plot
 # a = pd.DataFrame([d2, d]).T ; plt.scatter(a[0].map(dates.date2num), a[1]) ; plt.show()
 
+def do_top_quantile_plot(dfs, tag_list):
+    c = 0
+    d = dict()
+    for df in dfs:
+        dft = df.Total
+        quantile = np.log10(dft[dft.notnull() & (dft.map(lambda x: x != 0))]
+                ).quantile(0.75)
+        ts = [t for t in dft[np.log10(dft) > quantile].index]
+        plt.scatter(ts, [c]*len(ts))
+        if c < 5:
+            print(tag_list[c])
+            print(dft)
+            print(ts)
+        c += 1
+    plt.title("test")
+    plt.savefig("plots/test" + ".png")
+    plt.clf()
+    plt.close()
+
 def do_a_plot(df, fname_base, n, show_wm_api_switch=False,
         show_mobile_onset=False, top=None):
     save_fname = "plots/" + fname_base
@@ -99,30 +118,35 @@ def do_a_plot(df, fname_base, n, show_wm_api_switch=False,
 if __name__ == "__main__":
     # Take a slice of this list to restrict output; this is good for testing
     # since producing all plots takes a while.
-    for key in list(data.keys())[:]:
+    big_list = []
+    tag_list = []
+    for key in sorted(list(data.keys()))[:]:
         for n in [1, 3, 6, 12]:
             df = get_df(data[key][0], n)
             df_mobapp = get_df(data[key][1], n)
             df_mob = get_df(data[key][2], n)
             combined = df + df_mobapp + df_mob
             top = combined.sum().sort_values(ascending=False).index[:11]
+            big_list.append(df)
+            tag_list.append(key)
+    do_top_quantile_plot(big_list, tag_list)
 
-            do_a_plot(combined, fname_base=key+"_total", n=n,
-                    show_wm_api_switch=True, show_mobile_onset=True)
-            do_a_plot(combined, fname_base=key+"_total_top", n=n,
-                    show_wm_api_switch=True, show_mobile_onset=True, top=top)
+            # do_a_plot(combined, fname_base=key+"_total", n=n,
+            #         show_wm_api_switch=True, show_mobile_onset=True)
+            # do_a_plot(combined, fname_base=key+"_total_top", n=n,
+            #         show_wm_api_switch=True, show_mobile_onset=True, top=top)
 
-            do_a_plot(df, fname_base=key+"_desktop", show_wm_api_switch=True,
-                    n=n, show_mobile_onset=False)
-            do_a_plot(df, fname_base=key+"_desktop_top",
-                    show_wm_api_switch=True, n=n, show_mobile_onset=False,
-                    top=top)
+            # do_a_plot(df, fname_base=key+"_desktop", show_wm_api_switch=True,
+            #         n=n, show_mobile_onset=False)
+            # do_a_plot(df, fname_base=key+"_desktop_top",
+            #         show_wm_api_switch=True, n=n, show_mobile_onset=False,
+            #         top=top)
 
-            do_a_plot(df_mobapp + df_mob, fname_base=key+"_mobile",
-                    show_wm_api_switch=True, n=n, show_mobile_onset=True)
-            do_a_plot(df_mobapp + df_mob, fname_base=key+"_mobile_top",
-                    show_wm_api_switch=True, n=n, show_mobile_onset=True,
-                    top=top)
+            # do_a_plot(df_mobapp + df_mob, fname_base=key+"_mobile",
+            #         show_wm_api_switch=True, n=n, show_mobile_onset=True)
+            # do_a_plot(df_mobapp + df_mob, fname_base=key+"_mobile_top",
+            #         show_wm_api_switch=True, n=n, show_mobile_onset=True,
+            #         top=top)
 
 # To plot, use something like this
 # np.log10(df(n)+df_mob(n)+df_mobapp(n)).plot(color=colors, legend=None) ; plt.title("log10 plot, moving avg of {} months".format(n)) ; plt.show()
