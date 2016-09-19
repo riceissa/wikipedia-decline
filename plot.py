@@ -86,6 +86,9 @@ def do_a_plot(df, fname_base, n, show_wm_api_switch=False,
         plt.axvline(pd.to_datetime('2015-07-01'), color='b', lw=2)
         plt.axvline(pd.to_datetime('2015-07-01')+relativedelta(months=n-1),
                 color='g', lw=2)
+    quantile = np.log10(df).Total.quantile(0.75)
+    plt.axhline(quantile)
+    print(fname_base, quantile)
     plt.title("{} log10: moving avg of {} months".format(fname_base, n))
     plt.savefig("plots/" + fname_base + "_{}.png".format(n))
     plt.clf()
