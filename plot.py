@@ -73,7 +73,7 @@ def get_stats(data, period_lengths=[1, 3, 6, 12]):
 def do_a_plot(df, fname_base, n, show_wm_api_switch=False,
         show_mobile_onset=False, top=None):
     save_fname = "plots/" + fname_base
-    if top:
+    if top is not None:
         np.log10(df[top]).plot(legend=None)
     else:
         np.log10(df).plot(legend=None)
