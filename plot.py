@@ -67,7 +67,7 @@ for key in list(data.keys())[:]:
         plt.axvline(pd.to_datetime('2016-01-01')+relativedelta(months=n-1),
                 color='y', lw=2)
         plt.title("{} log10: moving avg of {} months, total".format(key, n))
-        plt.savefig("plots/{}_{}_{}.png".format(key, "total", n))
+        plt.savefig("plots/{}_{}_{}_top.png".format(key, "total", n))
         plt.clf()
         plt.close()
 
@@ -88,7 +88,7 @@ for key in list(data.keys())[:]:
         plt.axvline(pd.to_datetime('2016-01-01')+relativedelta(months=n-1),
                 color='y', lw=2)
         plt.title("{} log10: moving avg of {} months, desktop".format(key, n))
-        plt.savefig("plots/{}_{}_{}.png".format(key, "desktop", n))
+        plt.savefig("plots/{}_{}_{}_top.png".format(key, "desktop", n))
         plt.clf()
         plt.close()
 
@@ -115,7 +115,7 @@ for key in list(data.keys())[:]:
                 color='y', lw=2)
         # plt.legend(prop={'size': 7})
         plt.title("{} log10: moving avg of {} months, mobile".format(key, n))
-        plt.savefig("plots/{}_{}_{}.png".format(key, "mobile", n))
+        plt.savefig("plots/{}_{}_{}_top.png".format(key, "mobile", n))
         plt.clf()
         plt.close()
 
