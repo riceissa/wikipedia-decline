@@ -43,6 +43,7 @@ for key in data:
         plt.title("{}: moving avg of {} months".format(key, n))
         plt.savefig("plots/{}_{}_{}.png".format(key, "total", n))
         plt.clf()
+        plt.close()
 
 # To plot, use something like this
 # np.log10(df(n)+df_mob(n)+df_mobapp(n)).plot(color=colors, legend=None) ; plt.title("log10 plot, moving avg of {} months".format(n)) ; plt.show()
