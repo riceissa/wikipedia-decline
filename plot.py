@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import datetime
+from dateutil.relativedelta import relativedelta
 
 from csv_list import data
 
@@ -33,13 +34,17 @@ def get_df(fname, win_len):
         rolling.iloc[i] = tmp.iloc[i].divide(num_days)
     return rolling
 
-for key in data:
+for key in list(data.keys())[:]:
     for n in [1, 3, 6, 12]:
         df = get_df(data[key][0], n)
         df_mobapp = get_df(data[key][1], n)
         df_mob = get_df(data[key][2], n)
         np.log10(df + df_mobapp + df_mob).plot(legend=None)
         # plt.legend(prop={'size': 7})
+        plt.axvline(pd.to_datetime('2016-01-01'), color='r', lw=2)
+        plt.axvline(pd.to_datetime('2015-07-01'), color='b', lw=2)
+        plt.axvline(pd.to_datetime('2015-07-01')+relativedelta(months=n-1),
+                color='g', lw=2)
         plt.title("{} log10: moving avg of {} months".format(key, n))
         plt.savefig("plots/{}_{}_{}.png".format(key, "total", n))
         plt.clf()
@@ -47,12 +52,17 @@ for key in data:
 
         np.log10(df).plot(legend=None)
         # plt.legend(prop={'size': 7})
+        plt.axvline(pd.to_datetime('2016-01-01'), color='r', lw=2)
         plt.title("{} log10: moving avg of {} months".format(key, n))
         plt.savefig("plots/{}_{}_{}.png".format(key, "desktop", n))
         plt.clf()
         plt.close()
 
         np.log10(df_mobapp + df_mob).plot(legend=None)
+        plt.axvline(pd.to_datetime('2016-01-01'), color='r', lw=2)
+        plt.axvline(pd.to_datetime('2015-07-01'), color='b', lw=2)
+        plt.axvline(pd.to_datetime('2015-07-01')+relativedelta(months=n-1),
+                color='g', lw=2)
         # plt.legend(prop={'size': 7})
         plt.title("{} log10: moving avg of {} months".format(key, n))
         plt.savefig("plots/{}_{}_{}.png".format(key, "mobile", n))
