@@ -45,6 +45,8 @@ for key in list(data.keys())[:]:
         plt.axvline(pd.to_datetime('2015-07-01'), color='b', lw=2)
         plt.axvline(pd.to_datetime('2015-07-01')+relativedelta(months=n-1),
                 color='g', lw=2)
+        plt.axvline(pd.to_datetime('2016-01-01')+relativedelta(months=n-1),
+                color='y', lw=2)
         plt.title("{} log10: moving avg of {} months".format(key, n))
         plt.savefig("plots/{}_{}_{}.png".format(key, "total", n))
         plt.clf()
@@ -53,6 +55,8 @@ for key in list(data.keys())[:]:
         np.log10(df).plot(legend=None)
         # plt.legend(prop={'size': 7})
         plt.axvline(pd.to_datetime('2016-01-01'), color='r', lw=2)
+        plt.axvline(pd.to_datetime('2016-01-01')+relativedelta(months=n-1),
+                color='y', lw=2)
         plt.title("{} log10: moving avg of {} months".format(key, n))
         plt.savefig("plots/{}_{}_{}.png".format(key, "desktop", n))
         plt.clf()
@@ -63,6 +67,8 @@ for key in list(data.keys())[:]:
         plt.axvline(pd.to_datetime('2015-07-01'), color='b', lw=2)
         plt.axvline(pd.to_datetime('2015-07-01')+relativedelta(months=n-1),
                 color='g', lw=2)
+        plt.axvline(pd.to_datetime('2016-01-01')+relativedelta(months=n-1),
+                color='y', lw=2)
         # plt.legend(prop={'size': 7})
         plt.title("{} log10: moving avg of {} months".format(key, n))
         plt.savefig("plots/{}_{}_{}.png".format(key, "mobile", n))
