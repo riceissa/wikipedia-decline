@@ -51,8 +51,8 @@ def get_stats(data, period_lengths=[1, 3, 6, 12]):
         mobile_total = (df_mobapp + df_mob).Total.multiply(
                 df_mob.index.days_in_month).sum()
         d[key] = mobile_total/desktop_total
-    print(sorted(d.items(), key=lambda x: x[1]))
 
+    # TODO what does this do??
     for key in list(data.keys())[:]:
         for n in period_lengths:
             df = get_df(data[key][0], n)
@@ -64,8 +64,10 @@ def get_stats(data, period_lengths=[1, 3, 6, 12]):
 
             if n == 12:
                 d2[key] = df.Total.argmax()
+    ko = sorted(d.items(), key=lambda x: x[1])
+    return ko
 
-# get_stats(data)
+keyorder = get_stats(data, [6])
 
 # plot scatter plot
 # a = pd.DataFrame([d2, d]).T ; plt.scatter(a[0].map(dates.date2num), a[1]) ; plt.show()
@@ -76,13 +78,9 @@ def do_top_quantile_plot(dfs, tag_list):
     for df in dfs:
         dft = df.Total
         quantile = np.log10(dft[dft.notnull() & (dft.map(lambda x: x != 0))]
-                ).quantile(0.75)
+                ).quantile(0.95)
         ts = [t for t in dft[np.log10(dft) > quantile].index]
         plt.scatter(ts, [c]*len(ts))
-        if c < 5:
-            print(tag_list[c])
-            print(dft)
-            print(ts)
         c += 1
     plt.title("test")
     plt.savefig("plots/test" + ".png")
@@ -116,19 +114,25 @@ def do_a_plot(df, fname_base, n, show_wm_api_switch=False,
     plt.close()
 
 if __name__ == "__main__":
-    # Take a slice of this list to restrict output; this is good for testing
-    # since producing all plots takes a while.
     big_list = []
     tag_list = []
-    for key in sorted(list(data.keys()))[:]:
+    # Take a slice of this list to restrict output; this is good for testing
+    # since producing all plots takes a while.
+    # data_list = sorted(list(data.keys()))[:]
+    # print("data_list", data_list)
+    data_list = [x[0] for x in keyorder]
+    # print("keyorder", keyorder)
+    # print("d", d)
+    for key in data_list:
         for n in [1, 3, 6, 12]:
             df = get_df(data[key][0], n)
             df_mobapp = get_df(data[key][1], n)
             df_mob = get_df(data[key][2], n)
             combined = df + df_mobapp + df_mob
             top = combined.sum().sort_values(ascending=False).index[:11]
-            big_list.append(df)
-            tag_list.append(key)
+            if n == 6:
+                big_list.append(df)
+                tag_list.append(key)
     do_top_quantile_plot(big_list, tag_list)
 
             # do_a_plot(combined, fname_base=key+"_total", n=n,
