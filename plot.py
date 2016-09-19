@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import datetime
 
+from csv_list import data
+
 def get_df(fname, win_len):
     '''
     Return the rolling mean pageview dataframe, normalized by the number of
@@ -31,39 +33,9 @@ def get_df(fname, win_len):
         rolling.iloc[i] = tmp.iloc[i].divide(num_days)
     return rolling
 
-# def raw_df(fname):
-#     df = pd.read_csv(fname, sep='|')
-#     df = df[:-2] # remove "Total" and "Percentage" rows from the bottom
-#     df['Month'] = pd.to_datetime(df['Month'].map(lambda x:
-#         str(x)[:4] + "-" + str(x)[4:]))
-#     df = df.set_index('Month')
-#     df = df.sort_index()
-#     del df['Percentage']
-#     return df
-
-# def get_df(fname, win_len):
-#     df = pd.read_csv(fname)
-#     df = df[:-2] # remove "Total" and "Percentage" rows from the bottom
-#     df['Month'] = pd.to_datetime(df['Month'].map(lambda x:
-#         str(x)[:4] + "-" + str(x)[4:]))
-#     df = df.set_index('Month')
-#     df = df.sort_index()
-#     del df['Percentage']
-#     df = pd.rolling_sum(df, window=win_len)
-#     tmp = df.copy()
-#     for i in range(win_len-1, len(df)):
-#         # TODO use the month ends to calculate the period
-#         num_days = (tmp.iloc[i].name - tmp.iloc[i-win_len+1].name).days
-#         df.iloc[i] = tmp.iloc[i].divide(num_days)
-#     # df = df.divide(df.index.days_in_month, axis='index')
-#     return df
-
-df = raw_df('desktop_monthly_colors.csv')
-df_mob = raw_df('mobile_monthly_colors.csv')
-df_mobapp = raw_df('mobileapp_monthly_colors.csv')
-# df = lambda n: get_df('french_colors_desktop.csv', n)
-# df_mob = lambda n: get_df('french_colors_mobile.csv', n)
-# df_mobapp = lambda n: get_df('french_colors_mobileapp.csv', n)
+df = lambda n: get_df('french_colors_desktop.csv', n)
+df_mob = lambda n: get_df('french_colors_mobile.csv', n)
+df_mobapp = lambda n: get_df('french_colors_mobileapp.csv', n)
 
 # To plot, use something like this
 # np.log10(df(n)+df_mob(n)+df_mobapp(n)).plot(color=colors, legend=None) ; plt.title("log10 plot, moving avg of {} months".format(n)) ; plt.show()
