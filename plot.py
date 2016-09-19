@@ -71,9 +71,12 @@ def get_stats(data, period_lengths=[1, 3, 6, 12]):
 # a = pd.DataFrame([d2, d]).T ; plt.scatter(a[0].map(dates.date2num), a[1]) ; plt.show()
 
 def do_a_plot(df, fname_base, n, show_wm_api_switch=False,
-        show_mobile_onset=False):
+        show_mobile_onset=False, top=None):
     save_fname = "plots/" + fname_base
-    np.log10(df).plot(legend=None)
+    if top:
+        np.log10(df[top]).plot(legend=None)
+    else:
+        np.log10(df).plot(legend=None)
     # plt.legend(prop={'size': 7})
     if show_wm_api_switch:
         plt.axvline(pd.to_datetime('2016-01-01'), color='r', lw=2)
@@ -89,8 +92,8 @@ def do_a_plot(df, fname_base, n, show_wm_api_switch=False,
     plt.close()
 
 if __name__ == "__main__":
-    # Take a slice of this list to restrict output; this is good for testing since
-    # producing all plots takes a while.
+    # Take a slice of this list to restrict output; this is good for testing
+    # since producing all plots takes a while.
     for key in list(data.keys())[:1]:
         for n in [1, 3, 6, 12]:
             df = get_df(data[key][0], n)
@@ -101,82 +104,20 @@ if __name__ == "__main__":
 
             do_a_plot(combined, fname_base=key+"_total", n=n,
                     show_wm_api_switch=True, show_mobile_onset=True)
-            # np.log10(df + df_mobapp + df_mob).plot(legend=None)
-            # # plt.legend(prop={'size': 7})
-            # plt.axvline(pd.to_datetime('2016-01-01'), color='r', lw=2)
-            # plt.axvline(pd.to_datetime('2015-07-01'), color='b', lw=2)
-            # plt.axvline(pd.to_datetime('2015-07-01')+relativedelta(months=n-1),
-            #         color='g', lw=2)
-            # plt.axvline(pd.to_datetime('2016-01-01')+relativedelta(months=n-1),
-            #         color='y', lw=2)
-            # plt.title("{} log10: moving avg of {} months, total".format(key, n))
-            # plt.savefig("plots/{}_{}_{}.png".format(key, "total", n))
-            # plt.clf()
-            # plt.close()
-
-            # Top 10 for total
-            np.log10((df + df_mobapp + df_mob)[top]).plot(legend=None)
-            # plt.legend(prop={'size': 7})
-            plt.axvline(pd.to_datetime('2016-01-01'), color='r', lw=2)
-            plt.axvline(pd.to_datetime('2015-07-01'), color='b', lw=2)
-            plt.axvline(pd.to_datetime('2015-07-01')+relativedelta(months=n-1),
-                    color='g', lw=2)
-            plt.axvline(pd.to_datetime('2016-01-01')+relativedelta(months=n-1),
-                    color='y', lw=2)
-            plt.title("{} log10: moving avg of {} months, total".format(key, n))
-            plt.savefig("plots/{}_{}_{}_top.png".format(key, "total", n))
-            plt.clf()
-            plt.close()
+            do_a_plot(combined, fname_base=key+"_total_top", n=n,
+                    show_wm_api_switch=True, show_mobile_onset=True, top=top)
 
             do_a_plot(df, fname_base=key+"_desktop", show_wm_api_switch=True,
                     n=n, show_mobile_onset=False)
-            # np.log10(df).plot(legend=None)
-            # plt.axvline(pd.to_datetime('2016-01-01'), color='r', lw=2)
-            # plt.axvline(pd.to_datetime('2016-01-01')+relativedelta(months=n-1),
-            #         color='y', lw=2)
-            # plt.title("{} log10: moving avg of {} months, desktop".format(key, n))
-            # plt.savefig("plots/{}_{}_{}.png".format(key, "desktop", n))
-            # plt.clf()
-            # plt.close()
+            do_a_plot(df, fname_base=key+"_desktop_top",
+                    show_wm_api_switch=True, n=n, show_mobile_onset=False,
+                    top=top)
 
-            # Top 10 plot for desktop
-            np.log10(df[top]).plot(legend=None)
-            # plt.legend(prop={'size': 7})
-            plt.axvline(pd.to_datetime('2016-01-01'), color='r', lw=2)
-            plt.axvline(pd.to_datetime('2016-01-01')+relativedelta(months=n-1),
-                    color='y', lw=2)
-            plt.title("{} log10: moving avg of {} months, desktop".format(key, n))
-            plt.savefig("plots/{}_{}_{}_top.png".format(key, "desktop", n))
-            plt.clf()
-            plt.close()
-
-            do_a_plot(df_mobapp + df_mob, fname_base=key+"_mobile", show_wm_api_switch=True,
-                    n=n, show_mobile_onset=True)
-            # np.log10(df_mobapp + df_mob).plot(legend=None)
-            # plt.axvline(pd.to_datetime('2016-01-01'), color='r', lw=2)
-            # plt.axvline(pd.to_datetime('2015-07-01'), color='b', lw=2)
-            # plt.axvline(pd.to_datetime('2015-07-01')+relativedelta(months=n-1),
-            #         color='g', lw=2)
-            # plt.axvline(pd.to_datetime('2016-01-01')+relativedelta(months=n-1),
-            #         color='y', lw=2)
-            # plt.title("{} log10: moving avg of {} months, mobile".format(key, n))
-            # plt.savefig("plots/{}_{}_{}.png".format(key, "mobile", n))
-            # plt.clf()
-            # plt.close()
-
-            # Top 10 plot for mobile
-            np.log10((df_mobapp + df_mob)[top]).plot(legend=None)
-            plt.axvline(pd.to_datetime('2016-01-01'), color='r', lw=2)
-            plt.axvline(pd.to_datetime('2015-07-01'), color='b', lw=2)
-            plt.axvline(pd.to_datetime('2015-07-01')+relativedelta(months=n-1),
-                    color='g', lw=2)
-            plt.axvline(pd.to_datetime('2016-01-01')+relativedelta(months=n-1),
-                    color='y', lw=2)
-            # plt.legend(prop={'size': 7})
-            plt.title("{} log10: moving avg of {} months, mobile".format(key, n))
-            plt.savefig("plots/{}_{}_{}_top.png".format(key, "mobile", n))
-            plt.clf()
-            plt.close()
+            do_a_plot(df_mobapp + df_mob, fname_base=key+"_mobile",
+                    show_wm_api_switch=True, n=n, show_mobile_onset=True)
+            do_a_plot(df_mobapp + df_mob, fname_base=key+"_mobile_top",
+                    show_wm_api_switch=True, n=n, show_mobile_onset=True,
+                    top=top)
 
 # To plot, use something like this
 # np.log10(df(n)+df_mob(n)+df_mobapp(n)).plot(color=colors, legend=None) ; plt.title("log10 plot, moving avg of {} months".format(n)) ; plt.show()
