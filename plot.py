@@ -99,7 +99,7 @@ def do_a_plot(df, fname_base, n, show_wm_api_switch=False,
 if __name__ == "__main__":
     # Take a slice of this list to restrict output; this is good for testing
     # since producing all plots takes a while.
-    for key in list(data.keys())[:1]:
+    for key in list(data.keys())[:]:
         for n in [1, 3, 6, 12]:
             df = get_df(data[key][0], n)
             df_mobapp = get_df(data[key][1], n)
