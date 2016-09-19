@@ -33,9 +33,16 @@ def get_df(fname, win_len):
         rolling.iloc[i] = tmp.iloc[i].divide(num_days)
     return rolling
 
-df = lambda n: get_df('french_colors_desktop.csv', n)
-df_mob = lambda n: get_df('french_colors_mobile.csv', n)
-df_mobapp = lambda n: get_df('french_colors_mobileapp.csv', n)
+for key in data:
+    for n in [1, 3, 6, 12]:
+        df = get_df(data[key][0], n)
+        df_mobapp = get_df(data[key][1], n)
+        df_mob = get_df(data[key][2], n)
+        np.log10(df).plot()
+        plt.legend(prop={'size': 7})
+        plt.title("{}: moving avg of {} months".format(key, n))
+        plt.savefig("plots/{}_{}_{}.png".format(key, "total", n))
+        plt.clf()
 
 # To plot, use something like this
 # np.log10(df(n)+df_mob(n)+df_mobapp(n)).plot(color=colors, legend=None) ; plt.title("log10 plot, moving avg of {} months".format(n)) ; plt.show()
