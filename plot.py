@@ -3,8 +3,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import datetime
 from dateutil.relativedelta import relativedelta
+import matplotlib.dates as dates
 
 from csv_list import data
+
+sums = dict()
 
 def get_df(fname, win_len):
     '''
@@ -21,6 +24,9 @@ def get_df(fname, win_len):
     df = df.sort_index()
     del df['Percentage']
 
+    # Just for double checking later
+    sums[fname.split(".")[0][len("data/"):]] = df[datetime.date(2015, 7, 1):].Total.sum()
+
     rolling = pd.rolling_sum(df, window=win_len)
     tmp = rolling.copy()
     for i in range(win_len-1, len(rolling)):
@@ -33,6 +39,36 @@ def get_df(fname, win_len):
         num_days = (d1_eom - d0).days + 1
         rolling.iloc[i] = tmp.iloc[i].divide(num_days)
     return rolling
+
+d = dict()
+d2 = dict()
+def get_stats(data, period_lengths=[1, 3, 6, 12]):
+    for key in list(data.keys())[:]:
+        df = get_df(data[key][0], 1)[datetime.date(2015, 7, 1):]
+        df_mobapp = get_df(data[key][1], 1)
+        df_mob = get_df(data[key][2], 1)
+        desktop_total = df.Total.multiply(df.index.days_in_month).sum()
+        mobile_total = (df_mobapp + df_mob).Total.multiply(
+                df_mob.index.days_in_month).sum()
+        d[key] = mobile_total/desktop_total
+    print(sorted(d.items(), key=lambda x: x[1]))
+
+    for key in list(data.keys())[:]:
+        for n in period_lengths:
+            df = get_df(data[key][0], n)
+            df_mobapp = get_df(data[key][1], n)
+            df_mob = get_df(data[key][2], n)
+            combined = df + df_mobapp + df_mob
+            # print(key, "win_len="+str(n), combined.Total.argmax())
+            print(key, "win_len="+str(n), df.Total.argmax())
+
+            if n == 12:
+                d2[key] = df.Total.argmax()
+
+get_stats(data)
+
+# plot scatter plot
+# a = pd.DataFrame([d2, d]).T ; plt.scatter(a[0].map(dates.date2num), a[1]) ; plt.show()
 
 if __name__ == "__main__":
     # Take a slice of this list to restrict output; this is good for testing since
