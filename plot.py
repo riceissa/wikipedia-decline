@@ -67,8 +67,6 @@ def get_stats(data, period_lengths=[1, 3, 6, 12]):
     ko = sorted(d.items(), key=lambda x: x[1])
     return ko
 
-keyorder = get_stats(data, [6])
-
 # plot scatter plot
 # a = pd.DataFrame([d2, d]).T ; plt.scatter(a[0].map(dates.date2num), a[1]) ; plt.show()
 
@@ -114,6 +112,8 @@ def do_a_plot(df, fname_base, n, show_wm_api_switch=False,
     plt.close()
 
 if __name__ == "__main__":
+    keyorder = get_stats(data, [6])
+
     big_list = []
     tag_list = []
     # Take a slice of this list to restrict output; this is good for testing
