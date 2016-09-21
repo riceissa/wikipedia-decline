@@ -6,13 +6,14 @@ from dateutil.relativedelta import relativedelta
 import matplotlib.dates as dates
 
 from csv_list import data
+from plot import get_df
 
 dfs = []
 for i in range(1, 30):
     df = pd.read_csv('google_trends_mj/{0:02}.csv'.format(i))
     dfs.append(df)
 
-pd.concat([df.iloc[:, 1:].divide(df['Michael Jackson: (Worldwide)'].max()) for df in dfs], axis=1).set_index(dfs[0]['Week'])
+# pd.concat([df.iloc[:, 1:].divide(df['Michael Jackson: (Worldwide)'].max()) for df in dfs], axis=1).set_index(dfs[0]['Week'])
 
 def plot_musicians_log_minus():
     '''
@@ -35,7 +36,12 @@ def plot_musicians_log_minus():
     gt_df_sum = gt_df.sum(axis=1)
     combined_df = pd.DataFrame([gt_df_sum, wv_df.Total]).T
     combined_df.columns = ['google_trends', 'wikipedia_pageviews']
-    wv_df.append(gt_df).sort_index().resample('Q-APR', loffset='-1m')
+    combined_df = combined_df.resample('Q', fill_method='ffill')
+    (np.log10(combined_df.wikipedia_pageviews) - np.log10(combined_df.google_trends)).plot(legend=None)
+    plt.show()
+    # wv_df.append(gt_df).sort_index().resample('Q-APR', loffset='-1m')
+
+plot_musicians_log_minus()
 
 # sum of musicians
 # np.log10(gt_df.sum(axis=1))
