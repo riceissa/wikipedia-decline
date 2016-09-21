@@ -15,8 +15,14 @@ for i in range(1, 30):
 pd.concat([df.iloc[:, 1:].divide(df['Michael Jackson: (Worldwide)'].max()) for df in dfs], axis=1).set_index(dfs[0]['Week'])
 
 def plot_musicians_log_minus():
-
-    # pd.concat([df.iloc[:, 2:].divide(df['Michael Jackson: (Worldwide)'].max()) for df in dfs] + [dfs[0].iloc[:, 1:2].divide(dfs[0]['Michael Jackson: (Worldwide)'].max())], axis=1).set_index(dfs[0]['Week'])['Michael Jackson: (Worldwide)'].plot(legend=None); plt.show()
+    '''
+    This plots log(w(t)) - log(k(t)), where
+        WV(p, t) = P(p, t) * w(t)
+        GT(p, t) = P(p, t) * k(t)
+    where p is the page, t is time, WV is the number of Wikipedia pageviews, GT
+    is the Google Trends value, w is the usefulness of Wikipedia, and k is the
+    inverse of the popularity of Google.
+    '''
     wv_df = get_df('data/musicians_desktop.csv', 1)
     gt_df = pd.concat(
             # select non-MJ column and normalize by MJ max
