@@ -107,6 +107,10 @@ To get around these limitations, we did the following:
     stable, and we avoid the huge spike in traffic on account of [his
     death][mj_death].
 
+Note that because of the ambiguity of the word "Pitbull", for Pitbull
+only we used the "rapper" version of the search term instead of the
+generic search term.
+
 [pageres]: https://en.wikipedia.org/wiki/Wikipedia:Page_name#Technical_restrictions_and_limitations
 [gt_eg]: https://www.google.com/trends/explore?q=Michael%20Jackson,Justin%20Bieber
 [mj_death]: https://en.wikipedia.org/wiki/Death_of_Michael_Jackson#Media_and_Internet_coverage
