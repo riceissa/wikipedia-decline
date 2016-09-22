@@ -47,8 +47,8 @@ def plot_musicians_log_minus():
     # why we need to use pd.concat here even though for the above code, we
     # could use pd.DataFrame to make a DataFrame out of two Series. I also
     # tried converting to pd.Series here but that made the Series turn into
-    # this weird thing where the label names were split by character 'l', 'i',
-    # 'k', 'e', ' ', 't', 'h', 'i', 's'.
+    # this weird thing where the label names were split by character (L, i, k,
+    # e,  , t, h, i, s).
     for i in range(30):
         cm = pd.concat([gt_df.iloc[:, i:i+1], wv_df.iloc[:, i:i+1]]).sort_index()
         cm = cm.resample('Q', fill_method='ffill')
