@@ -71,7 +71,8 @@ To get around these limitations, we did the following:
   * We exported two trends at a time.
   * Each export included Michael Jackson, so that we could use that as a
     common "scale".
-  * We only exported the data starting in the end of September 2011. In
+  * We only exported the data starting in the end of September 2011
+    (last 5 years). In
     particular, this means that the trend for Michael Jackson is fairly
     stable, and we avoid the huge spike in traffic on account of [his
     death][mj_death].
