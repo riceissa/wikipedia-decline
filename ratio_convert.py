@@ -41,6 +41,12 @@ def plot_musicians_log_minus():
     plt.show()
     # wv_df.append(gt_df).sort_index().resample('Q-APR', loffset='-1m')
 
+    for i in range(30):
+        cm = pd.concat([gt_df.iloc[:, i:i+1], wv_df.iloc[:, i:i+1]]).sort_index()
+        cm = cm.resample('Q', fill_method='ffill')
+        cm.columns = ['gt', 'wp']
+        (np.log10(cm)['wp'] - np.log10(cm)['gt']).plot(legend=None)
+
 plot_musicians_log_minus()
 
 # sum of musicians
