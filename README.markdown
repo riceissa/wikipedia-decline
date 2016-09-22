@@ -34,7 +34,7 @@ Here are the steps used to export the CSVs used from Wikipedia Views.
         201606|21070|28176|8121|20080|23575|7348|19018|21993|1854|11994|16637|179866|0.3
         (More rows here...)
 
- 9. Copy the page and paste into a local file and save.
+9.  Copy the page and paste into a local file and save.
 10. Press the back button in your browser.
 11. Under "Enter the device type for which you are interested in pageviews",
     select "Mobile web", and hit "Submit" again.
