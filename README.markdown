@@ -53,15 +53,29 @@ Here are the steps used to export the CSVs used from Wikipedia Views.
 ### Exporting Google Trends data
 
 Google Trends allows export of trends as CSV.
-[Example][gt_eg].
+[Example][gt_eg]; click on the three dots on the upper right of the plot and
+select "CSV".
 This is pretty useful, but there are some limitations:
 
   * All data points are integers.
+    This means that if the range of values is large, the smaller values might
+    just appear as "0".
   * You can only graph ~5 trends at a time.
   * Each time you plot a trend, the data points gets normalized so that 100 is
-    assigned to the highest value.
+    assigned to the highest value among all the trend lines.
     This means that when looking at two plots, the numbers don't mean the same
     things unless the peak in each plot is the same.
 
+To get around these limitations, we did the following:
+
+  * We exported two trends at a time.
+  * Each export included Michael Jackson, so that we could use that as a
+    common "scale".
+  * We only exported the data starting in the end of September 2011. In
+    particular, this means that the trend for Michael Jackson is fairly
+    stable, and we avoid the huge spike in traffic on account of [his
+    death][mj_death].
+
 [pageres]: https://en.wikipedia.org/wiki/Wikipedia:Page_name#Technical_restrictions_and_limitations
 [gt_eg]: https://www.google.com/trends/explore?q=Michael%20Jackson,Justin%20Bieber
+[mj_death]: https://en.wikipedia.org/wiki/Death_of_Michael_Jackson#Media_and_Internet_coverage
