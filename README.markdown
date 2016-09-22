@@ -71,6 +71,9 @@ To get around these limitations, we did the following:
   * We exported two trends at a time.
   * Each export included Michael Jackson, so that we could use that as a
     common "scale".
+    In particular, within each export, we divide by the maximum Michael
+    Jackson value, so that in every export the maximum Michael Jackson
+    value is assigned 1.
   * We only exported the data starting in the end of September 2011
     (last 5 years). In
     particular, this means that the trend for Michael Jackson is fairly
