@@ -107,7 +107,8 @@ To get around these limitations, we did the following:
     stable, and we avoid the huge spike in traffic on account of [his
     death][mj_death].
 
-Note that because of the ambiguity of the word "Pitbull", for Pitbull
+Note that because of the ambiguity of the word "Pitbull", for
+[Pitbull][pitbull]
 only we used the "rapper" version of the search term instead of the
 generic search term.
 
@@ -115,3 +116,4 @@ generic search term.
 [gt_eg]: https://www.google.com/trends/explore?q=Michael%20Jackson,Justin%20Bieber
 [mj_death]: https://en.wikipedia.org/wiki/Death_of_Michael_Jackson#Media_and_Internet_coverage
 [plots_dir]: http://23.226.229.10/~issa/pageview_plots/
+[pitbull]: https://en.wikipedia.org/wiki/Pitbull_(rapper)
