@@ -32,6 +32,7 @@ Here are the steps used to export the CSVs used from Wikipedia Views.
         201608|17579|27770|8001|18100|17999|7010|17847|21613|1909|11616|12246|161690|0.3
         201607|17662|68046|8008|18477|22252|8375|16952|22034|1691|11194|15013|209704|0.4
         201606|21070|28176|8121|20080|23575|7348|19018|21993|1854|11994|16637|179866|0.3
+        (More rows here...)
 
  9. Copy the page and paste into a local file and save.
 10. Press the back button in your browser.
