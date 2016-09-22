@@ -41,6 +41,13 @@ def plot_musicians_log_minus():
     plt.show()
     # wv_df.append(gt_df).sort_index().resample('Q-APR', loffset='-1m')
 
+    # This is a bit fragile; it depends on the artists showing up in the same
+    # order for the Google trends and Wikipedia Views data.  Also I'm not sure
+    # why we need to use pd.concat here even though for the above code, we
+    # could use pd.DataFrame to make a DataFrame out of two Series. I also
+    # tried converting to pd.Series here but that made the Series turn into
+    # this weird thing where the label names were split by character 'l', 'i',
+    # 'k', 'e', ' ', 't', 'h', 'i', 's'.
     for i in range(30):
         cm = pd.concat([gt_df.iloc[:, i:i+1], wv_df.iloc[:, i:i+1]]).sort_index()
         cm = cm.resample('Q', fill_method='ffill')
