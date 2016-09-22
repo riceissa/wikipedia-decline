@@ -1,3 +1,7 @@
+# Plots for Wikipedia "decline" post
+
+For the post draft, go to
+<http://issarice.com/revisiting-the-great-decline-in-wikipedia-pageviews>.
 
 ## Exporting CSVs
 
@@ -41,7 +45,7 @@ Here are the steps used to export the CSVs used from Wikipedia Views.
     "A pagename cannot contain any of the following
     characters: # \< \> [ ] | { } \_ (which all have special meanings in wiki
     syntax)".
-    This makes them particularly useful to use as delimiters.)
+    This makes them particularly attractive to use as delimiters.)
 
 9.  Copy the page and paste into a local file and save.
 10. Press the back button in your browser.
