@@ -1,6 +1,8 @@
 
 ## Exporting CSVs
 
+### Wikipedia Views
+
 Here are the steps used to export the CSVs used from Wikipedia Views.
 
 1.  Go to <http://wikipediaviews.org/multipletagsandmonths.php>.
@@ -48,4 +50,18 @@ Here are the steps used to export the CSVs used from Wikipedia Views.
     Repeat step 9.
     Do the same for "Mobile app".
 
+### Exporting Google Trends data
+
+Google Trends allows export of trends as CSV.
+[Example][gt_eg].
+This is pretty useful, but there are some limitations:
+
+  * All data points are integers.
+  * You can only graph ~5 trends at a time.
+  * Each time you plot a trend, the data points gets normalized so that 100 is
+    assigned to the highest value.
+    This means that when looking at two plots, the numbers don't mean the same
+    things unless the peak in each plot is the same.
+
 [pageres]: https://en.wikipedia.org/wiki/Wikipedia:Page_name#Technical_restrictions_and_limitations
+[gt_eg]: https://www.google.com/trends/explore?q=Michael%20Jackson,Justin%20Bieber
