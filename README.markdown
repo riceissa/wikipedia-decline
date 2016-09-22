@@ -3,7 +3,7 @@
 For the post draft, go to
 <http://issarice.com/revisiting-the-great-decline-in-wikipedia-pageviews>.
 
-# File explanations
+## File explanations
 
   * `data` contains Wikipedia Views pageview exports.
   * `google_trends_mj` contains Google Trends CSV exports where each
