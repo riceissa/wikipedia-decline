@@ -34,8 +34,9 @@ Here are the steps used to export the CSVs used from Wikipedia Views.
         201606|21070|28176|8121|20080|23575|7348|19018|21993|1854|11994|16637|179866|0.3
         (More rows here...)
 
-    (Technical note: Wikipedia [does not allow a pipe character in page
-    titles][pagres]: "A pagename cannot contain any of the following
+    (Technical note: Wikipedia
+    [does not allow a pipe character in page titles][pageres]:
+    "A pagename cannot contain any of the following
     characters: # \< \> [ ] | { } \_ (which all have special meanings in wiki
     syntax)".
     This makes them particularly useful to use as delimiters.)
