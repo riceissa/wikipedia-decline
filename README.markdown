@@ -3,29 +3,29 @@
 
 Here are the steps used to export the CSVs used from Wikipedia Views.
 
- 1. Go to <http://wikipediaviews.org/multipletagsandmonths.php>.
+1.  Go to <http://wikipediaviews.org/multipletagsandmonths.php>.
     This is the "Multiple tags and months" option from the top menu.
- 2. Select a tag.
+2.  Select a tag.
     For this example we choose "Colors".
- 3. Select the "Check this to simultaneously select all months excluding the
+3.  Select the "Check this to simultaneously select all months excluding the
     current month" checkbox.
- 4. Click "Submit".
+4.  Click "Submit".
     You will get a table that has three columns: Month, Views of pages with tag
     Colors, and Percentage.
- 5. Click on the word "Colors" in the middle column.
+5.  Click on the word "Colors" in the middle column.
     This will take you to
     <http://wikipediaviews.org/displayviewsformultiplemonths.php?tag=Colors&language=en&device=desktop&allmonths=allmonths>.
     This page depends on the tag used.
     You will now see a table with more columns, one for each color, as well as
     the "Total" column.
- 6. Scroll down, to find the link that says "Show technical settings (for
+6.  Scroll down, to find the link that says "Show technical settings (for
     advanced users only)".
     Click to reveal the options; I think this requires JavaScript.
- 7. Go to where it says "Enter the format in which you want statistics to be
+7.  Go to where it says "Enter the format in which you want statistics to be
     displayed".
     Choose "CSV: Month and number of views separated by pipe delimiter (|);
     each line for a different month".
- 8. Scroll up and click "Submit" again.
+8.  Scroll up and click "Submit" again.
     You will get a page that looks like this:
 
         Month|Views of page Black|Views of page Blue|Views of page Brown|Views of page Green|Views of page Grey|Views of page Orange|Views of page Purple|Views of page Red|Views of page Violet|Views of page White|Views of page Yellow|Total|Percentage
