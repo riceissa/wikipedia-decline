@@ -37,7 +37,8 @@ def plot_musicians_log_minus():
     combined_df = pd.DataFrame([gt_df_sum, wv_df.Total]).T
     combined_df.columns = ['google_trends', 'wikipedia_pageviews']
     combined_df = combined_df.resample('Q', fill_method='ffill')
-    (np.log10(combined_df.wikipedia_pageviews) - np.log10(combined_df.google_trends)).plot(legend=None)
+    (np.log10(combined_df.wikipedia_pageviews) -
+            np.log10(combined_df.google_trends)).plot(legend=None)
     plt.show()
     # wv_df.append(gt_df).sort_index().resample('Q-APR', loffset='-1m')
 
