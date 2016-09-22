@@ -3,6 +3,27 @@
 For the post draft, go to
 <http://issarice.com/revisiting-the-great-decline-in-wikipedia-pageviews>.
 
+# File explanations
+
+  * `data` contains Wikipedia Views pageview exports.
+  * `google_trends_mj` contains Google Trends CSV exports where each
+    musicians is plotted alongside Michael Jackson.
+    This is the version of exports that was actually used.
+  * `google_trends` contains Google Trends CSV exports where each file
+    is part of a "chain" containing two musicians running down the list
+    of musicians.
+    If the musicians are A, B, C, D, then this directory has the files
+    'A and B', 'B and C', and 'C and D'.
+    This is was not used in the final analysis.
+  * `old_data` contains some miscellaneous data files that were used
+    when experimenting.
+  * `plot.py` is the plotting file for pageviews.
+    The list of plots can be found [here][plots_dir].
+  * `csv_list.py` is a listing of files in `data`, used for easier
+    access in `plot.py`.
+  * `ratio_convert.py` is the plotting file for comparing the Google
+    Trends and Wikipedia Views data.
+
 ## Exporting CSVs
 
 ### Wikipedia Views
@@ -87,3 +108,4 @@ To get around these limitations, we did the following:
 [pageres]: https://en.wikipedia.org/wiki/Wikipedia:Page_name#Technical_restrictions_and_limitations
 [gt_eg]: https://www.google.com/trends/explore?q=Michael%20Jackson,Justin%20Bieber
 [mj_death]: https://en.wikipedia.org/wiki/Death_of_Michael_Jackson#Media_and_Internet_coverage
+[plots_dir]: http://23.226.229.10/~issa/pageview_plots/
