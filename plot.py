@@ -45,8 +45,8 @@ d2 = dict()
 def get_stats(data, period_lengths=[1, 3, 6, 12]):
     for key in list(data.keys())[:]:
         df = get_df(data[key][0], 1)[datetime.date(2015, 7, 1):]
-        df_mobapp = get_df(data[key][1], 1)
-        df_mob = get_df(data[key][2], 1)
+        df_mobapp = get_df(data[key][2], 1)
+        df_mob = get_df(data[key][3], 1)
         desktop_total = df.Total.multiply(df.index.days_in_month).sum()
         mobile_total = (df_mobapp + df_mob).Total.multiply(
                 df_mob.index.days_in_month).sum()
@@ -56,8 +56,8 @@ def get_stats(data, period_lengths=[1, 3, 6, 12]):
     for key in list(data.keys())[:]:
         for n in period_lengths:
             df = get_df(data[key][0], n)
-            df_mobapp = get_df(data[key][1], n)
-            df_mob = get_df(data[key][2], n)
+            df_mobapp = get_df(data[key][2], n)
+            df_mob = get_df(data[key][3], n)
             combined = df + df_mobapp + df_mob
             # print(key, "win_len="+str(n), combined.Total.argmax())
             print(key, "win_len="+str(n), df.Total.argmax())
@@ -126,31 +126,46 @@ if __name__ == "__main__":
     for key in data_list:
         for n in [1, 3, 6, 12]:
             df = get_df(data[key][0], n)
-            df_mobapp = get_df(data[key][1], n)
-            df_mob = get_df(data[key][2], n)
+            # stats.grok.se has a different way of dealing with spiders, so
+            # only use the bot data starting in 2016 (when the API switch was
+            # made)
+            df_desktop_spider = get_df(data[key][1],
+                    n)[datetime.date(2016, 1, 1):]
+            df_mobapp = get_df(data[key][2], n)
+            df_mob = get_df(data[key][3], n)
+            df_mob_spider = get_df(data[key][4], n)[datetime.date(2016, 1, 1):]
             combined = df + df_mobapp + df_mob
             top = combined.sum().sort_values(ascending=False).index[:11]
-            if n == 6:
-                big_list.append(df)
-                tag_list.append(key)
-    do_top_quantile_plot(big_list, tag_list)
 
-            # do_a_plot(combined, fname_base=key+"_total", n=n,
-            #         show_wm_api_switch=True, show_mobile_onset=True)
-            # do_a_plot(combined, fname_base=key+"_total_top", n=n,
-            #         show_wm_api_switch=True, show_mobile_onset=True, top=top)
+            do_a_plot(combined, fname_base=key+"_total", n=n,
+                    show_wm_api_switch=True, show_mobile_onset=True)
+            do_a_plot(combined, fname_base=key+"_total_top", n=n,
+                    show_wm_api_switch=True, show_mobile_onset=True, top=top)
 
-            # do_a_plot(df, fname_base=key+"_desktop", show_wm_api_switch=True,
-            #         n=n, show_mobile_onset=False)
-            # do_a_plot(df, fname_base=key+"_desktop_top",
-            #         show_wm_api_switch=True, n=n, show_mobile_onset=False,
-            #         top=top)
+            do_a_plot(df, fname_base=key+"_desktop", show_wm_api_switch=True,
+                    n=n, show_mobile_onset=False)
+            do_a_plot(df, fname_base=key+"_desktop_top",
+                    show_wm_api_switch=True, n=n, show_mobile_onset=False,
+                    top=top)
 
-            # do_a_plot(df_mobapp + df_mob, fname_base=key+"_mobile",
-            #         show_wm_api_switch=True, n=n, show_mobile_onset=True)
-            # do_a_plot(df_mobapp + df_mob, fname_base=key+"_mobile_top",
-            #         show_wm_api_switch=True, n=n, show_mobile_onset=True,
-            #         top=top)
+            do_a_plot(df_mobapp + df_mob, fname_base=key+"_mobile",
+                    show_wm_api_switch=True, n=n, show_mobile_onset=True)
+            do_a_plot(df_mobapp + df_mob, fname_base=key+"_mobile_top",
+                    show_wm_api_switch=True, n=n, show_mobile_onset=True,
+                    top=top)
+
+            do_a_plot(combined + df_desktop_spider + df_mob_spider,
+                    fname_base=key+"_total_spider",
+                    show_wm_api_switch=True, n=n, show_mobile_onset=True)
+            do_a_plot(combined + df_desktop_spider + df_mob_spider,
+                    fname_base=key+"_total_spider",
+                    show_wm_api_switch=True, n=n, show_mobile_onset=True,
+                    top=top)
+
+            # if n == 6:
+            #     big_list.append(df)
+            #     tag_list.append(key)
+    # do_top_quantile_plot(big_list, tag_list)
 
 # To plot, use something like this
 # np.log10(df(n)+df_mob(n)+df_mobapp(n)).plot(color=colors, legend=None) ; plt.title("log10 plot, moving avg of {} months".format(n)) ; plt.show()
