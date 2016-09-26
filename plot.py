@@ -123,7 +123,7 @@ if __name__ == "__main__":
     data_list = [x[0] for x in keyorder]
     # print("keyorder", keyorder)
     # print("d", d)
-    for key in data_list:
+    for key in data_list[:]:
         for n in [1, 3, 6, 12]:
             df = get_df(data[key][0], n)
             # stats.grok.se has a different way of dealing with spiders, so
@@ -154,11 +154,12 @@ if __name__ == "__main__":
                     show_wm_api_switch=True, n=n, show_mobile_onset=True,
                     top=top)
 
-            do_a_plot(combined + df_desktop_spider + df_mob_spider,
-                    fname_base=key+"_total_spider",
+            combined_with_spider = combined.add(df_desktop_spider +
+                    df_mob_spider, fill_value=0)
+
+            do_a_plot(combined_with_spider, fname_base=key+"_total_spider",
                     show_wm_api_switch=True, n=n, show_mobile_onset=True)
-            do_a_plot(combined + df_desktop_spider + df_mob_spider,
-                    fname_base=key+"_total_spider",
+            do_a_plot(combined_with_spider, fname_base=key+"_total_spider_top",
                     show_wm_api_switch=True, n=n, show_mobile_onset=True,
                     top=top)
 
