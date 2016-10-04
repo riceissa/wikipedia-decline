@@ -42,8 +42,9 @@ def get_df(fname, win_len):
 
 def get_stats(data, period_lengths=[1, 3, 6, 12]):
     '''
-    Take a dict data which has tag names as keys and a list of dataframes as
-    values. The order of the dataframes in the list is given in csv_list.py.
+    Take a dict data which has tag names as keys and a list of file paths to
+    CSVs as values. The order of the dataframes in the list is given in
+    csv_list.py.
 
     Return a tuple (d, d2). Here d is a dict whose keys are tag names (the same
     ones present in data) and values are the mobile:desktop pageviews ratio
@@ -63,7 +64,8 @@ def get_stats(data, period_lengths=[1, 3, 6, 12]):
         # df, df_mobapp, and df_mob are normalized by the number of days in the
         # month, but we want the raw counts, so reproduce the raw totals. We
         # could have just re-read the CSVs and gotten the totals that way, but
-        # since we already have the dataframes we might as well use them.
+        # since we already have the dataframes through get_df() we might as
+        # well use them.
         desktop_total = df.Total.multiply(df.index.days_in_month).sum()
         mobile_total = (df_mobapp + df_mob).Total.multiply(
                 df_mob.index.days_in_month).sum()
@@ -80,8 +82,6 @@ def get_stats(data, period_lengths=[1, 3, 6, 12]):
             d2[("desktop", key, n)] = df.Total.argmax()
 
     return (d, d2)
-
-# ko = sorted(get_stats(data)[0].items(), key=lambda x: x[1])
 
 # plot scatter plot
 # a = pd.DataFrame([d2, d]).T ; plt.scatter(a[0].map(dates.date2num), a[1]) ; plt.show()
@@ -128,7 +128,17 @@ def do_a_plot(df, fname_base, n, show_wm_api_switch=False,
     plt.close()
 
 if __name__ == "__main__":
-    keyorder = get_stats(data, [6])
+    # TODO fix this
+    # keyorder = get_stats(data, [6])
+    d, d2 = get_stats(data)
+
+    # Print mobile:desktop ratios
+    # for tup in sorted(d.items(), key=lambda x: x[1]):
+    #     print(tup)
+
+    # Print peak months
+    for tup in sorted(d2.items()):
+        print(tup)
 
     big_list = []
     tag_list = []
@@ -136,9 +146,8 @@ if __name__ == "__main__":
     # since producing all plots takes a while.
     # data_list = sorted(list(data.keys()))[:]
     # print("data_list", data_list)
-    data_list = [x[0] for x in keyorder]
-    # print("keyorder", keyorder)
-    # print("d", d)
+    # data_list = [x[0] for x in keyorder]
+    data_list = []
     for key in data_list[:]:
         for n in [1, 3, 6, 12]:
             df = get_df(data[key][0], n)
