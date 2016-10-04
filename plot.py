@@ -137,8 +137,8 @@ if __name__ == "__main__":
     #     print(tup)
 
     # Print peak months
-    for tup in sorted(d2.items()):
-        print(tup)
+    # for tup in sorted(d2.items()):
+    #     print(tup)
 
     big_list = []
     tag_list = []
