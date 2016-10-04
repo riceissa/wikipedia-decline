@@ -1,0 +1,203 @@
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Abkhazia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Afghanistan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Albania
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Algeria
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Andorra
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Angola
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Antigua and Barbuda
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Argentina
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Armenia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Australia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Austria
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Azerbaijan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Bahrain
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Bangladesh
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Barbados
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Belarus
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Belgium
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Belize
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Benin
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Bhutan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Bolivia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Bosnia and Herzegovina
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Botswana
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Brazil
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Brunei
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Bulgaria
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Burkina Faso
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Burma
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Burundi
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Cambodia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Cameroon
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Canada
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Cape Verde
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Central African Republic
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Chad
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Chile
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=China
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Colombia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Comoros
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Cook Islands
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Costa Rica
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Croatia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Cuba
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Cyprus
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Czech Republic
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Democratic Republic of the Congo
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Denmark
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Djibouti
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Dominica
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Dominican Republic
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=East Timor
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Ecuador
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Egypt
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=El Salvador
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Equatorial Guinea
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Eritrea
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Estonia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Ethiopia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Federated States of Micronesia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Fiji
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Finland
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=France
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Gabon
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Georgia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Georgia (country)
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Germany
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Greece
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Grenada
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Guatemala
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Guinea
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Guinea-Bissau
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Guyana
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Haiti
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Honduras
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Hungary
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Iceland
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=India
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Indonesia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Iran
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Iraq
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Ireland
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Israel
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Italy
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Jamaica
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Japan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Jordan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Kazakhstan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Kenya
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Kiribati
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Kosovo
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Kuwait
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Kyrgyzstan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Laos
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Latvia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Lebanon
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Lesotho
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Liberia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Libya
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Liechtenstein
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Lithuania
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Luxembourg
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Macedonia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Madagascar
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Malawi
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Malaysia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Maldives
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Mali
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Malta
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Marshall Islands
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Mauritania
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Mauritius
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Mexico
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Moldova
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Monaco
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Mongolia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Montenegro
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Morocco
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Mozambique
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Nagorno-Karabakh
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Namibia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Nauru
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Nepal
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Netherlands
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=New Zealand
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Nicaragua
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Niger
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Nigeria
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Niue
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=North Korea
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Northern Cyprus
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Norway
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Oman
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Pakistan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Palau
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Palestine
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Panama
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Papua New Guinea
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Paraguay
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Peru
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Philippines
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Poland
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Portugal
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Qatar
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Romania
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Russia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Rwanda
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Sahrawi Arab Democratic Republic
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Saint Kitts and Nevis
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Saint Lucia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Saint Vincent and the Grenadines
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Samoa
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=San Marino
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Saudi Arabia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=São Tomé and Príncipe
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Senegal
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Serbia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Seychelles
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Sierra Leone
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Singapore
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Slovakia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Slovenia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Solomon Islands
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Somalia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Somaliland
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=South Africa
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=South Korea
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=South Ossetia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=South Sudan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Spain
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Sri Lanka
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Sudan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Swaziland
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Sweden
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Switzerland
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Syria
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Taiwan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Tajikistan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Tanzania
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Thailand
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=The Bahamas
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=The Gambia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Togo
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Tonga
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Transnistria
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Trinidad and Tobago
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Tunisia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Turkey
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Turkmenistan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Tuvalu
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Uganda
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Ukraine
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=United Arab Emirates
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=United Kingdom
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=United States
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Uruguay
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Uzbekistan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Vanuatu
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Vatican City
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Venezuela
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Vietnam
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Yemen
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Zambia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Zimbabwe

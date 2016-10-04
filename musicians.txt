@@ -1,0 +1,30 @@
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Adele
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Ariana Grande
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Avicii
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Bruno Mars
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Carly Rae Jepsen
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Christina Perri
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Demi Lovato
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Drake (rapper)
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Ed Sheeran
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Ellie Goulding
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Eminem
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Jennifer Lopez
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Justin Bieber
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Katy Perry
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Ludacris
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Meghan Trainor
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Michael Jackson
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Miley Cyrus
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Nicki Minaj
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Pitbull (rapper)
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Psy
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Rihanna
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Romeo Santos
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Selena Gomez
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Shakira
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Sia (musician)
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Taylor Swift
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Wiz Khalifa
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Zayn Malik
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=fi&format=json&titles=Zendaya

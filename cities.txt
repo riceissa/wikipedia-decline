@@ -1,0 +1,133 @@
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Abidjan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Addis Ababa
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Ahmedabad
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Alexandria
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Ankara
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Austin, Texas
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Baghdad
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Bangalore
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Bangkok
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Beihai
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Beijing
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Berkeley, California
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Berlin
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Boston
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Buenos Aires
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Busan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Cairo
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Cape Town
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Casablanca
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Changchun
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Changsha
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Charlotte, North Carolina
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Chengdu
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Chennai
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Chicago
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Chongqing
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Columbus, Ohio
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Dalian
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Dallas
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Dar es Salaam
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Delhi
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Denver
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Detroit
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Dhaka
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Dongguan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Durban
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Ekurhuleni
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=El Paso, Texas
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Faisalabad
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Fort Worth, Texas
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Foshan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Frankfurt
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Fuzhou
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Giza
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Guangzhou
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Guiyang
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Haikou
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Hangzhou
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Hanoi
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Harbin
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Hefei
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Ho Chi Minh City
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Houston
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Huhhot
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Hyderabad
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Indianopolis
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Istanbul
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Jacksonville, Florida
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Jaipur
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Jakarta
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Jeddah
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Jinan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Johannesburg
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Kabul
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Kanpur
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Karachi
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Kolkata
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Kunming
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Lagos
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Lahore
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Lanzhou
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Lima
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=London
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Los Angeles
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Madrid
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Manila
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Memphis, Tennessee
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Mexico City
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Moscow
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Mumbai
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Nairobi
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Nanchang
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Nanjing
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Nanning
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=New Taipei City
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=New York City
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Ningbo
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Oakland, California
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Paris
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Peshawar
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Philadelphia
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Phoenix, Arizona
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Pune
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Pyongyang
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Qingdao
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Quanzhou
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Rawalpindi
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Rio de Janeiro
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Riyadh
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Saint Petersburg
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=San Antonio
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=San Diego
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=San Francisco
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=San Jose, California
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Santiago
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Sanya
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=São Paulo
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Seattle
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Seoul
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Shanghai
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Shantou
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Shenyang
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Shenzhen
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Shijiazhuang
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Singapore
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Surat
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Suzhou
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Taiyuan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Tehran
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Tianjin
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Tokyo
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Urumqi
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Washington, D.C.
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Wenzhou
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Wuhan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Wuxi
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Xiamen
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Yangon
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Yinchuan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Yokohama
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Zhengzhou
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Zhongshan
+https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllang=ja&format=json&titles=Zunyi
