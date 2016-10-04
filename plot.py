@@ -40,32 +40,48 @@ def get_df(fname, win_len):
         rolling.iloc[i] = tmp.iloc[i].divide(num_days)
     return rolling
 
-d = dict()
-d2 = dict()
 def get_stats(data, period_lengths=[1, 3, 6, 12]):
-    for key in list(data.keys())[:]:
+    '''
+    Take a dict data which has tag names as keys and a list of dataframes as
+    values. The order of the dataframes in the list is given in csv_list.py.
+
+    Return a tuple (d, d2). Here d is a dict whose keys are tag names (the same
+    ones present in data) and values are the mobile:desktop pageviews ratio
+    since July 2015 of the respective tags. d2 is a dict whose keys are tuples
+    (platform, tag, window), where platform is "combined" or "desktop", tag is
+    the tag name, and window is the window length. The value is the month of
+    peak pageviews for that tuple.
+    '''
+    d = dict()
+    d2 = dict()
+
+    # Get the overall mobile:desktop ratio since July 2015
+    for key in data:
         df = get_df(data[key][0], 1)[datetime.date(2015, 7, 1):]
         df_mobapp = get_df(data[key][2], 1)
         df_mob = get_df(data[key][3], 1)
+        # df, df_mobapp, and df_mob are normalized by the number of days in the
+        # month, but we want the raw counts, so reproduce the raw totals. We
+        # could have just re-read the CSVs and gotten the totals that way, but
+        # since we already have the dataframes we might as well use them.
         desktop_total = df.Total.multiply(df.index.days_in_month).sum()
         mobile_total = (df_mobapp + df_mob).Total.multiply(
                 df_mob.index.days_in_month).sum()
         d[key] = mobile_total/desktop_total
 
-    # TODO what does this do??
-    for key in list(data.keys())[:]:
+    # Find the month of peak pageviews for each tag and for each window length.
+    for key in data:
         for n in period_lengths:
             df = get_df(data[key][0], n)
             df_mobapp = get_df(data[key][2], n)
             df_mob = get_df(data[key][3], n)
             combined = df + df_mobapp + df_mob
-            # print(key, "win_len="+str(n), combined.Total.argmax())
-            print(key, "win_len="+str(n), df.Total.argmax())
+            d2[("combined", key, n)] = combined.Total.argmax()
+            d2[("desktop", key, n)] = df.Total.argmax()
 
-            if n == 12:
-                d2[key] = df.Total.argmax()
-    ko = sorted(d.items(), key=lambda x: x[1])
-    return ko
+    return (d, d2)
+
+# ko = sorted(get_stats(data)[0].items(), key=lambda x: x[1])
 
 # plot scatter plot
 # a = pd.DataFrame([d2, d]).T ; plt.scatter(a[0].map(dates.date2num), a[1]) ; plt.show()
